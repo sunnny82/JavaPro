@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class HW03 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double result; 
+ 
+		System.out.print("연산>>");
+		double a = sc.nextInt();
+		char op = sc.next().charAt(0);
+		double b = sc.nextInt();
+
+		switch(op) {
+ 			case '+':
+ 				result = a + b;
+ 				System.out.println(a + op + b + "의 계산 결과는 " + result);
+ 				break;
+ 			case '-':
+ 				result = a - b;
+ 				System.out.println(a + op + b + "의 계산 결과는 " + result);
+ 				break;
+ 			case '*':
+ 				result = a * b;
+ 				System.out.println(a + op + b + "의 계산 결과는 " + result);
+ 				break;
+ 			case '/':
+ 				result = a / b;
+ 				System.out.println(a + op + b + "의 계산 결과는 " + result);
+ 				break;
+		}
+ 
+		sc.close();
+	}
+}
